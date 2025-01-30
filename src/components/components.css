@@ -1,0 +1,104 @@
+.howManyTasks{
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+.sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.sections button{
+    padding: 0 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #eee;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.sections span{
+    color: #9999;
+}
+.todo-card{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #222;
+    margin:1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-card:hover{
+    background-color: #333;
+    scale: 1.02;
+}
+.todo-card button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ddd;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.button-delete:hover{
+    color: #ff0000;
+}
+.button-done:hover{
+    color: #0b0;
+}
+.todo-card button:disabled{
+    color: #bbb9;
+    cursor:text;
+}
+.todo-card-input{
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ddd;
+    width: 100%;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 1rem;
+}
+.inputContainer button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ccca;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.inputContainer button:hover{
+    color: #fff;
+    scale: 1.01;
+}
+.inputContainer input{
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ddd;
+    width: 100%;
+}
+.inputContainer input:focus{
+    outline: none;
+}
+.inputContainer input:hover::placeholder{
+    color: #ddd;
+}
+.tab-selected{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
