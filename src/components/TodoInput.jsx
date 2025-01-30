@@ -5,8 +5,12 @@ export function TodoInput(props) {
     const [input, setInput] = useState("");
 
     return (
-        <div className="inputContainer">
-            <input value={input} placeholder="Add a new task" onChange={(e)=> {setInput(e.target.value)}}></input>
+        <div >
+            <form className="inputContainer">
+            <input value={input} placeholder="Add a new task" onChange={(e)=> {setInput(e.target.value)}} onClick={()=> {
+                if(!input) return;
+                handleAddTodo(input);
+                setInput("")}}></input>
             <button onClick={()=> {
                 if(!input) return;
                 handleAddTodo(input);
@@ -14,6 +18,7 @@ export function TodoInput(props) {
             } }>
               <i className="fa-solid fa-plus"></i>
             </button>
+            </form>
         </div>
     )
 }
