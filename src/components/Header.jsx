@@ -7,7 +7,7 @@ export function Header(todos) {
 
     return (
         <header>
-            <h1 className="howManyTasks">You have {todos.todos.length} active {isJustOne}</h1>
+            <h1 className="howManyTasks">You have {todos.todos.length} {isJustOne}</h1>
         </header>
     )
 }

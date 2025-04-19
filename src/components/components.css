@@ -102,3 +102,52 @@
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
+
+@media (max-width: 608px) {
+    .sections button{
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 448px) {
+    .sections button{
+        font-size: 1rem;
+        padding: 0 .7rem;
+    }
+    .howManyTasks{
+        font-size: 1.7rem;
+    }
+    .todo-card button{
+        font-size: 1rem;
+    }
+    .todo-card-input{
+        font-size: 1.2rem;
+    }
+    .inputContainer button{
+        font-size: 1.2rem;
+    }
+    .inputContainer input{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 378px) {
+    .sections button{
+        font-size: .85rem;
+        padding: 0 .5rem;
+    }
+    .howManyTasks{
+        font-size: 1.4rem;
+    }
+    .todo-card button{
+        font-size: .8rem;
+    }
+    .todo-card-input{
+        font-size: 1rem;
+    }
+    .inputContainer button{
+        font-size: 1rem;
+    }
+    .inputContainer input{
+        font-size: 1rem;
+    }
+}
